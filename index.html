@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<link href="css/site.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.bgpos.js"></script>	
+	<script type="text/javascript">
+		$(function() {
+			
+			$("#demo").hover(function(){
+				$(this).animate({ backgroundPosition : "201 0"});
+			}, 
+			function(){
+				$(this).stop()
+				$(this).animate({ backgroundPosition : "0 0"});
+			});
+			
+		});
+	</script>
+  </head>
+  <body>
+	<div id="demo"/>
+  </body>
+</html>
